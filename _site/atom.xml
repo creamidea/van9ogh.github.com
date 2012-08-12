@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>4xFlavor</title>
+ <link href="http://van9ogh.github.com/atom.xml" rel="self"/>
+ <link href="http://van9ogh.github.com/"/>
+ <updated>2012-08-12T13:28:04+08:00</updated>
+ <id>http://van9ogh.github.com/</id>
+ <author>
+   <name>Dan Hixon</name>
+   <email>van9ogh@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Hello World</title>
+   <link href="http://van9ogh.github.com/all/articles/2012/08/12/Hello-World.html"/>
+   <updated>2012-08-12T00:00:00+08:00</updated>
+   <id>http://van9ogh.github.com/all/articles/2012/08/12/Hello-World</id>
+   <content type="html">&lt;h1&gt;Hello World&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hello World World&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

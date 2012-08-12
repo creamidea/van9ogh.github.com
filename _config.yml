@@ -1,0 +1,11 @@
+safe:        false
+auto:        true
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+
+future:     true
+lsi:         false
+pygments:    true
+markdown:   rdiscount 
