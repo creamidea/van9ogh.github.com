@@ -111,8 +111,21 @@ h1 a:hover { color:#fba919 ;}
 #logo {
 	margin: -65px 10px -30px -50px;
 	float:right;
-	background: url('/images/gems-15.png');
+	background: url('/images/gnu-200px.png');
+	background-repeat: no-repeat;
 	height: 213px; width:204px;
+	border: 5px solid red;
+}
+#logo2 {
+	/*margin: -65px 10px -30px -50px;*/
+	margin: -90px 0px 30px 50px;
+	float:right;
+	background: url('/images/gnu-200px.png');
+	background-repeat: no-repeat;
+	/*height: 213px; width:204px;*/
+	/*height: 200px; width:200px;*/
+	height: 200px; width:200px;
+	border: 5px solid red;
 }
 
 .publish_date {
