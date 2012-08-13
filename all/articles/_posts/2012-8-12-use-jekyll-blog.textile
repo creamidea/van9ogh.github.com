@@ -20,5 +20,31 @@ p. 马上就大三了，写过的博客有几个但都没有能够坚持下来�
 
 p. 作者讲的很清楚， 我觉得主要是购买域名麻烦一点， 估计在学校期间先凑合着使用github-page，以后工作了再去GoDaddy购买域名的。
 
+h2. 关于语法高亮
+
+<p>_layout/post.html</p>
+<p>关于语法高亮， 主要是使用javascript, 你也可以到google code上去下载, 这里直接使用了amazon上的js资源</p>
+<a href="http://code.google.com/p/syntaxhighlighter/">syntaxhighlighter</a>
+
+<pre name="code" class="html">
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shCore.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushRuby.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushPhp.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushXml.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushCss.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushBash.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushJScript.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushCpp.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushJava.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushCSharp.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushPython.js"></script>
+<script language="javascript" src="http://communicatopia.s3.amazonaws.com/js/shBrushSql.js"></script>
+<script language="javascript">
+dp.SyntaxHighlighter.ClipboardSwf = 'http://communicatopia.s3.amazonaws.com/js/clipboard.swf';
+//name, showGutter, showControls, collapseAll, firstLine , showColumns
+dp.SyntaxHighlighter.HighlightAll('code',false, false,false,1,false);
+</script>
+</pre>
+
 <h2>目标</h2>
 p. 今年写30篇以上博客

@@ -17,7 +17,8 @@ h2. 关于apue ch21
 
 <p>ipp是Internet Printing Protocol, 它构建在http协议之上, 作者其实写了两个程序print和printd, 客户端和服务器。
 下面是print程序的逻辑:</p>
-<pre name="code" class="c">
+
+<pre name="code" class="cpp">
 int main(int argc, char *argv[])
 {
 	检查用户输入
@@ -34,7 +35,7 @@ int main(int argc, char *argv[])
 
 <p>printd程序逻辑</p>
 
-<pre name="code" class="c">
+<pre name="code" class="cpp">
 int main(int argc, char *argv[])
 {
 	设置信号屏蔽字(因为要单独开一个线程处理信号)
@@ -55,7 +56,7 @@ int main(int argc, char *argv[])
 <p>程序的逻辑如此简单，关键是如何管理多个客户端线程以及多个提交的文件呢。
 作者使用了两个结构体, 并且定义了一些函数来管理它们， 我们且看:</p>
 
-<pre name="code" class="c">
+<pre name="code" class="cpp">
 // 管理客户端提交的打印文件， print程序只要调用add_job即可
 struct job {
 	struct job      *next;		/* next in list */
@@ -92,7 +93,7 @@ h2. 一些值得注意的地方
 <p>属性的格式是这样的:描述属性类型的1字节标志，然后是以2字节的二进制整数形式存储的属性名字的长度，接着是属性名，然后是属性值的长度， 然后是属性值。
 我们看看add_option(...)函数是如何做到的:</p>
 
-<pre name="code" class="c">
+<pre name="code" class="cpp">
 char *
 add_option(char *cp, int tag, char *optname, char *optval)
 {
@@ -120,9 +121,8 @@ add_option(char *cp, int tag, char *optname, char *optval)
 
 <p>调用:</p>
 
-<pre name="code" class="c">
-#define TAG_CHARSET;          0x47/* 0x47 ASCII为G */
-... function(...) {
+<pre name="code" class="cpp">
+#define TAG_CHARSET;          0x47/* 0x47 ASCII为 */
 	char *icp, ibuf[512];
 	memset(ibuf, 0, sizeof(ibuf));
 	int ilen;
@@ -135,7 +135,7 @@ add_option(char *cp, int tag, char *optname, char *optval)
 
 <p>第二个主题: 如何写一个可靠的异步IO来read数据</p>
 
-<pre name="code" class="c">
+<pre name="code" class="cpp">
 ssize_t
 tread(int fd, void *buf, size_t nbytes, unsigned int timout)
 {
