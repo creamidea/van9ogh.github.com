@@ -5,8 +5,6 @@ title: "apue读书笔记:与网络打印机通信"
 
 h2. {{ page.title }}
 
-bq. 其实...已经很晚了...
-
 p(publish_date). 13 Aug 2012
 
 h2. 为什么
