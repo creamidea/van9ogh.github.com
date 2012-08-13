@@ -1,0 +1,36 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+	echo "Usage: ./new caterories title"
+	echo "Example: ./new wiki Hello-World"
+	exit 1
+fi
+
+DATE=`date +"20%y-%m-%d"`
+
+do_writeheader() {
+	echo "---" >> $DATE-$1.textile
+	echo "layout: post" >> $DATE-$1.textile
+	echo "title: " >> $DATE-$1.textile
+	echo "---" >> $DATE-$1.textile
+}
+
+case $1 in
+	articles)
+		cd all/articles/_posts/
+		do_writeheader $2
+		vi $DATE-$2.textile
+		;;
+	wiki)
+		cd all/wiki/_posts/
+		do_writeheader $2
+		vi $DATE-$2.textile
+		;;
+esac
+
+read -p "Do you want to keep this file?[Y/n]" PASS
+if [ $PASS == 'n' -o $PASS == 'N' ]; then
+	rm -rf $DATE-$2.textile
+fi
+
+exit 0
