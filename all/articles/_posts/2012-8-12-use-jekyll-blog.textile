@@ -6,6 +6,7 @@ title: "使用jekyll搭建轻量级博客"
 h2. 使用jekyll搭建轻量级博客
 
 bq. be busy living or be busy dying.
+<span class="attributed" style="font-size:small"><i>-- The Shawshank Redemption</i></span>
 
 <h2>为什么</h2>
 p. 马上就大三了，写过的博客有几个但都没有能够坚持下来，一方面是由于项目在身， 学习总是渴求狼吞虎咽式,这本身其实也浪费了很多时间， 学习总是没有能够静下心来， 读了很多书都不求甚解， 我知道这不是我想要的， 之前在google reader上一直订阅几个技术博客， 十分钦佩他们能够坚持走下来， 也萌生了写技术博客的想法， 但一直没有行动， 趁着暑假， 我知道我该行动了。
