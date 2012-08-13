@@ -1,0 +1,31 @@
+---
+layout: default
+title: "About Me"
+---
+
+h2. {{ page.title }}
+
+<pre name="code" class="javascript">
+var Me = {
+	"name"          : "刘鹏"
+	"job"           : "coding"
+	"email"         : "van9ogh(at)gmail(dot)com"
+	"language"      : [
+		"C/C++", "Java", "Nesc"
+	],
+	"interests"     : [
+		"无线传感器网络", "操作系统", "算法", "数据挖掘", "软件架构"
+	],
+	"hobby"         : [
+		"读书", "旅游", "饮食", "吉他"
+	]
+}
+</pre>
+
+
+h2. ChangeLog
+
+> 2012-8-12 搭建jekyll
+> 2012-8-13 添加语法高亮
+
+{% include highlight.txt %}
