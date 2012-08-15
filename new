@@ -13,6 +13,8 @@ do_writeheader() {
 	echo "layout: post" >> $DATE-$1.textile
 	echo "title: " >> $DATE-$1.textile
 	echo "---" >> $DATE-$1.textile
+	echo "h2. {{ page.title }}" >> $DATE-$1.textile
+	echo "p(publish_date)." >> $DATE-$1.textile
 }
 
 case $1 in
