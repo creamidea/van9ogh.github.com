@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "apue读书笔记:与网络打印机通信"
+category: linux programming
 ---
 
 h2. {{ page.title }}

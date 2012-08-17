@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "细说tinyos PrintfC"
+category: tinyos
 ---
 
 h2. {{ page.title }}

@@ -18,6 +18,7 @@ p. 马上就大三了，写过的博客有几个但都没有能够坚持下来�
 <h2>资料</h2>
 * "(blog)像黑客一样写博客":http://www.soimort.org/tech-blog/2011/11/19/introduction-to-jekyll_zh.html
 * "(blog)使用Github Pages建独立博客":http://beiyuu.com/github-pages/
+* "(blog)基于jekyll的github建站指南":http://jiyeqian.github.com/2012/07/host-your-pages-at-github-using-jekyll/
 
 p. 作者讲的很清楚， 我觉得主要是购买域名麻烦一点， 估计在学校期间先凑合着使用github-page，以后工作了再去GoDaddy购买域名的。
 

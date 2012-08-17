@@ -1,13 +1,13 @@
 ---
 layout: default
-title: van GOGH's Tech Blog
 ---
 
 <div id="home">
-  <h2 class="fade">All</h2>
+	  <h2 class="fade">{{ page.category}}</h2>
+
   <ul class="posts">
-    {% for post in site.posts %}
+	{% for post in site.categories.[page.category] %}
 	  <li>&laquo; <a href="{{ post.url }}">{{ post.title }}</a><span>{{ post.date | date_to_string }}</span></li>
-    {% endfor %}
+	{% endfor %}
   </ul>
 </div>
