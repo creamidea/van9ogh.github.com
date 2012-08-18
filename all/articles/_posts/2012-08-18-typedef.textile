@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "typedef"
+title: "typedef: 两个重要用法"
 ---
 
 h2. {{ page.title }}
