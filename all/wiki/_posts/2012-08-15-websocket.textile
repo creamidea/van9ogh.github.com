@@ -34,3 +34,7 @@ h2. 参考
 
 * <a href="http://en.wikipedia.org/wiki/WebSocket">websocket</a>
 * <a href="http://www.ibm.com/developerworks/cn/views/web/libraryview.jsp?view_by=search&sort_by=Date&sort_order=desc&view_by=Search&search_by=反向+Ajax+部分&dwsearch.x=14&dwsearch.y=15">反向ajax</a>
+
+h2. 补充(20120819)
+
+p. 从HTTP/1.1起，默认都开启了Keep-Alive，保持连接特性，简单地说，当一个网页打开完成后，客户端和服务器之间用于传输HTTP数据的TCP连接不会关闭，如果客户端再次访问这个服务器上的网页，会继续使用这一条已经建立的连接 Keep-Alive不会永久保持连接，它有一个保持时间，可以在不同的服务器软件（如Apache）中设定这个时间
