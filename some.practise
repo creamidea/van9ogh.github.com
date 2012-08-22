@@ -1,0 +1,16 @@
+1. picture
+!/images/safari-4-top-sites-engaged.png(Safari 4 top sites engaged)!
+<img src="/images/vim_folding_before.png" style="width:500px;height:260px;border:solid 3px #e3e3e3;" />
+
+
+2. post a new article or wiki
+---
+layout: post
+title: "¿?¿?vim¿?¿?¿?¿?¿?"
+---
+
+h2. {{ page.title }}
+
+p(publish_date). 2012/08/22 19:00
+
+
