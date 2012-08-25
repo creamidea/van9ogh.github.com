@@ -1,3 +1,5 @@
 _site/
 *.swp
 *.textile.swp
+*.[oa]
+a.out
